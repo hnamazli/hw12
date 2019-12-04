@@ -1,20 +1,21 @@
-const { assert } = require('chai');
-//const  = require('../src/');
+import ASCIIConvert from '../src/asciiconvert.js';
 
-describe('', () => {
+describe('Convert instance', () => {
     it('Should be an object', () => {
-        //const  = new ();
+        const asciiConvert = new ASCIIConvert();
         
-        assert.isObject();
+        assert.isObject(asciiConvert);
     });
 });
 
-describe('BSTree.getSize', () => {
+describe('Convert functions', () => {
+    let asciiConvert = null;
+
     beforeEach(() => {
-        //
+        let asciiConvert = new ASCIIConvert();
     });
 
-    it('should return size (undefined)', () => {
+    it('should return size ()', () => {
         const arr = undefined;
         const expected = 0;
 
